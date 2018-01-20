@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230A487D2007626200BDE7D8 /* DetailMapViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 230A487C2007626200BDE7D8 /* DetailMapViewCtrl.m */; };
+		230FB77B2005CCA100C0DC40 /* CSTViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 230FB77A2005CCA100C0DC40 /* CSTViewCell.m */; };
+		230FB78C2006060800C0DC40 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230FB78B2006060800C0DC40 /* MapKit.framework */; };
+		230FB78F20063EC600C0DC40 /* MapViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 230FB78E20063EC600C0DC40 /* MapViewCtrl.m */; };
+		230FB7922006934500C0DC40 /* CstmMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 230FB7912006934500C0DC40 /* CstmMapView.m */; };
+		230FB7982006A21500C0DC40 /* LocationInfoCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 230FB7972006A21500C0DC40 /* LocationInfoCtrl.m */; };
+		2330DC252001EFA800A2CC5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330DC242001EFA800A2CC5D /* AppDelegate.m */; };
+		2330DC282001EFA800A2CC5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330DC272001EFA800A2CC5D /* main.m */; };
+		2330DC2B2001EFA800A2CC5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330DC2A2001EFA800A2CC5D /* ViewController.m */; };
+		2330DC2D2001EFA800A2CC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2330DC2C2001EFA800A2CC5D /* Assets.xcassets */; };
+		2330DC302001EFA900A2CC5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2330DC2E2001EFA900A2CC5D /* Main.storyboard */; };
+		2330DC3B2001EFA900A2CC5D /* FindNearPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330DC3A2001EFA900A2CC5D /* FindNearPlaceTests.m */; };
+		2330DC462001EFA900A2CC5D /* FindNearPlaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330DC452001EFA900A2CC5D /* FindNearPlaceUITests.m */; };
+		2373670F2005425000F861C4 /* CstmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373670E2005425000F861C4 /* CstmView.m */; };
+		2373671520054A9A00F861C4 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2373671420054A9A00F861C4 /* images.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2330DC372001EFA900A2CC5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2330DC182001EFA800A2CC5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2330DC1F2001EFA800A2CC5D;
+			remoteInfo = FindNearPlace;
+		};
+		2330DC422001EFA900A2CC5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2330DC182001EFA800A2CC5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2330DC1F2001EFA800A2CC5D;
+			remoteInfo = FindNearPlace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		230A487B2007626200BDE7D8 /* DetailMapViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailMapViewCtrl.h; sourceTree = "<group>"; };
+		230A487C2007626200BDE7D8 /* DetailMapViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailMapViewCtrl.m; sourceTree = "<group>"; };
+		230FB7792005CCA100C0DC40 /* CSTViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTViewCell.h; sourceTree = "<group>"; };
+		230FB77A2005CCA100C0DC40 /* CSTViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTViewCell.m; sourceTree = "<group>"; };
+		230FB78B2006060800C0DC40 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		230FB78D20063EC600C0DC40 /* MapViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewCtrl.h; sourceTree = "<group>"; };
+		230FB78E20063EC600C0DC40 /* MapViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewCtrl.m; sourceTree = "<group>"; };
+		230FB7902006934500C0DC40 /* CstmMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstmMapView.h; sourceTree = "<group>"; };
+		230FB7912006934500C0DC40 /* CstmMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CstmMapView.m; sourceTree = "<group>"; };
+		230FB7962006A21500C0DC40 /* LocationInfoCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationInfoCtrl.h; sourceTree = "<group>"; };
+		230FB7972006A21500C0DC40 /* LocationInfoCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationInfoCtrl.m; sourceTree = "<group>"; };
+		2330DC202001EFA800A2CC5D /* FindNearPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindNearPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2330DC232001EFA800A2CC5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2330DC242001EFA800A2CC5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2330DC272001EFA800A2CC5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2330DC292001EFA800A2CC5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2330DC2A2001EFA800A2CC5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2330DC2C2001EFA800A2CC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2330DC2F2001EFA900A2CC5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2330DC312001EFA900A2CC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2330DC362001EFA900A2CC5D /* FindNearPlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindNearPlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2330DC3A2001EFA900A2CC5D /* FindNearPlaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindNearPlaceTests.m; sourceTree = "<group>"; };
+		2330DC3C2001EFA900A2CC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2330DC412001EFA900A2CC5D /* FindNearPlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindNearPlaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2330DC452001EFA900A2CC5D /* FindNearPlaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindNearPlaceUITests.m; sourceTree = "<group>"; };
+		2330DC472001EFA900A2CC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2373670D2005425000F861C4 /* CstmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstmView.h; sourceTree = "<group>"; };
+		2373670E2005425000F861C4 /* CstmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CstmView.m; sourceTree = "<group>"; };
+		2373671420054A9A00F861C4 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2330DC1D2001EFA800A2CC5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230FB78C2006060800C0DC40 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2330DC332001EFA900A2CC5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2330DC3E2001EFA900A2CC5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2330DC172001EFA800A2CC5D = {
+			isa = PBXGroup;
+			children = (
+				230FB78B2006060800C0DC40 /* MapKit.framework */,
+				2330DC222001EFA800A2CC5D /* FindNearPlace */,
+				2330DC392001EFA900A2CC5D /* FindNearPlaceTests */,
+				2330DC442001EFA900A2CC5D /* FindNearPlaceUITests */,
+				2330DC212001EFA800A2CC5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2330DC212001EFA800A2CC5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2330DC202001EFA800A2CC5D /* FindNearPlace.app */,
+				2330DC362001EFA900A2CC5D /* FindNearPlaceTests.xctest */,
+				2330DC412001EFA900A2CC5D /* FindNearPlaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2330DC222001EFA800A2CC5D /* FindNearPlace */ = {
+			isa = PBXGroup;
+			children = (
+				2373670D2005425000F861C4 /* CstmView.h */,
+				2373670E2005425000F861C4 /* CstmView.m */,
+				2373671420054A9A00F861C4 /* images.jpg */,
+				2330DC232001EFA800A2CC5D /* AppDelegate.h */,
+				2330DC242001EFA800A2CC5D /* AppDelegate.m */,
+				2330DC292001EFA800A2CC5D /* ViewController.h */,
+				2330DC2A2001EFA800A2CC5D /* ViewController.m */,
+				2330DC2C2001EFA800A2CC5D /* Assets.xcassets */,
+				2330DC2E2001EFA900A2CC5D /* Main.storyboard */,
+				2330DC312001EFA900A2CC5D /* Info.plist */,
+				2330DC262001EFA800A2CC5D /* Supporting Files */,
+				230FB7792005CCA100C0DC40 /* CSTViewCell.h */,
+				230FB77A2005CCA100C0DC40 /* CSTViewCell.m */,
+				230FB78D20063EC600C0DC40 /* MapViewCtrl.h */,
+				230FB78E20063EC600C0DC40 /* MapViewCtrl.m */,
+				230FB7902006934500C0DC40 /* CstmMapView.h */,
+				230FB7912006934500C0DC40 /* CstmMapView.m */,
+				230FB7962006A21500C0DC40 /* LocationInfoCtrl.h */,
+				230FB7972006A21500C0DC40 /* LocationInfoCtrl.m */,
+				230A487B2007626200BDE7D8 /* DetailMapViewCtrl.h */,
+				230A487C2007626200BDE7D8 /* DetailMapViewCtrl.m */,
+			);
+			path = FindNearPlace;
+			sourceTree = "<group>";
+		};
+		2330DC262001EFA800A2CC5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2330DC272001EFA800A2CC5D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2330DC392001EFA900A2CC5D /* FindNearPlaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				2330DC3A2001EFA900A2CC5D /* FindNearPlaceTests.m */,
+				2330DC3C2001EFA900A2CC5D /* Info.plist */,
+			);
+			path = FindNearPlaceTests;
+			sourceTree = "<group>";
+		};
+		2330DC442001EFA900A2CC5D /* FindNearPlaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2330DC452001EFA900A2CC5D /* FindNearPlaceUITests.m */,
+				2330DC472001EFA900A2CC5D /* Info.plist */,
+			);
+			path = FindNearPlaceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2330DC1F2001EFA800A2CC5D /* FindNearPlace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2330DC4A2001EFA900A2CC5D /* Build configuration list for PBXNativeTarget "FindNearPlace" */;
+			buildPhases = (
+				2330DC1C2001EFA800A2CC5D /* Sources */,
+				2330DC1D2001EFA800A2CC5D /* Frameworks */,
+				2330DC1E2001EFA800A2CC5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindNearPlace;
+			productName = FindNearPlace;
+			productReference = 2330DC202001EFA800A2CC5D /* FindNearPlace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2330DC352001EFA900A2CC5D /* FindNearPlaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2330DC4D2001EFA900A2CC5D /* Build configuration list for PBXNativeTarget "FindNearPlaceTests" */;
+			buildPhases = (
+				2330DC322001EFA900A2CC5D /* Sources */,
+				2330DC332001EFA900A2CC5D /* Frameworks */,
+				2330DC342001EFA900A2CC5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2330DC382001EFA900A2CC5D /* PBXTargetDependency */,
+			);
+			name = FindNearPlaceTests;
+			productName = FindNearPlaceTests;
+			productReference = 2330DC362001EFA900A2CC5D /* FindNearPlaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2330DC402001EFA900A2CC5D /* FindNearPlaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2330DC502001EFA900A2CC5D /* Build configuration list for PBXNativeTarget "FindNearPlaceUITests" */;
+			buildPhases = (
+				2330DC3D2001EFA900A2CC5D /* Sources */,
+				2330DC3E2001EFA900A2CC5D /* Frameworks */,
+				2330DC3F2001EFA900A2CC5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2330DC432001EFA900A2CC5D /* PBXTargetDependency */,
+			);
+			name = FindNearPlaceUITests;
+			productName = FindNearPlaceUITests;
+			productReference = 2330DC412001EFA900A2CC5D /* FindNearPlaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2330DC182001EFA800A2CC5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Sabertoothasda;
+				TargetAttributes = {
+					2330DC1F2001EFA800A2CC5D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					2330DC352001EFA900A2CC5D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2330DC1F2001EFA800A2CC5D;
+					};
+					2330DC402001EFA900A2CC5D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 2330DC1F2001EFA800A2CC5D;
+					};
+				};
+			};
+			buildConfigurationList = 2330DC1B2001EFA800A2CC5D /* Build configuration list for PBXProject "FindNearPlace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2330DC172001EFA800A2CC5D;
+			productRefGroup = 2330DC212001EFA800A2CC5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2330DC1F2001EFA800A2CC5D /* FindNearPlace */,
+				2330DC352001EFA900A2CC5D /* FindNearPlaceTests */,
+				2330DC402001EFA900A2CC5D /* FindNearPlaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2330DC1E2001EFA800A2CC5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2330DC2D2001EFA800A2CC5D /* Assets.xcassets in Resources */,
+				2330DC302001EFA900A2CC5D /* Main.storyboard in Resources */,
+				2373671520054A9A00F861C4 /* images.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2330DC342001EFA900A2CC5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2330DC3F2001EFA900A2CC5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2330DC1C2001EFA800A2CC5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230A487D2007626200BDE7D8 /* DetailMapViewCtrl.m in Sources */,
+				2330DC2B2001EFA800A2CC5D /* ViewController.m in Sources */,
+				230FB78F20063EC600C0DC40 /* MapViewCtrl.m in Sources */,
+				230FB7922006934500C0DC40 /* CstmMapView.m in Sources */,
+				2330DC282001EFA800A2CC5D /* main.m in Sources */,
+				2330DC252001EFA800A2CC5D /* AppDelegate.m in Sources */,
+				230FB77B2005CCA100C0DC40 /* CSTViewCell.m in Sources */,
+				2373670F2005425000F861C4 /* CstmView.m in Sources */,
+				230FB7982006A21500C0DC40 /* LocationInfoCtrl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2330DC322001EFA900A2CC5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2330DC3B2001EFA900A2CC5D /* FindNearPlaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2330DC3D2001EFA900A2CC5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2330DC462001EFA900A2CC5D /* FindNearPlaceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2330DC382001EFA900A2CC5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2330DC1F2001EFA800A2CC5D /* FindNearPlace */;
+			targetProxy = 2330DC372001EFA900A2CC5D /* PBXContainerItemProxy */;
+		};
+		2330DC432001EFA900A2CC5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2330DC1F2001EFA800A2CC5D /* FindNearPlace */;
+			targetProxy = 2330DC422001EFA900A2CC5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2330DC2E2001EFA900A2CC5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2330DC2F2001EFA900A2CC5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2330DC482001EFA900A2CC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2330DC492001EFA900A2CC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2330DC4B2001EFA900A2CC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				INFOPLIST_FILE = FindNearPlace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.FindNearPlace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FindNearPlace/FindNearPlace-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TAPI_VERIFY_MODE = ErrorsOnly;
+			};
+			name = Debug;
+		};
+		2330DC4C2001EFA900A2CC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				INFOPLIST_FILE = FindNearPlace/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.FindNearPlace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FindNearPlace/FindNearPlace-Bridging-Header.h";
+				TAPI_VERIFY_MODE = ErrorsOnly;
+			};
+			name = Release;
+		};
+		2330DC4E2001EFA900A2CC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FindNearPlaceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.FindNearPlaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindNearPlace.app/Contents/MacOS/FindNearPlace";
+			};
+			name = Debug;
+		};
+		2330DC4F2001EFA900A2CC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FindNearPlaceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.FindNearPlaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindNearPlace.app/Contents/MacOS/FindNearPlace";
+			};
+			name = Release;
+		};
+		2330DC512001EFA900A2CC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FindNearPlaceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.FindNearPlaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FindNearPlace;
+			};
+			name = Debug;
+		};
+		2330DC522001EFA900A2CC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FindNearPlaceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.FindNearPlaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FindNearPlace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2330DC1B2001EFA800A2CC5D /* Build configuration list for PBXProject "FindNearPlace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2330DC482001EFA900A2CC5D /* Debug */,
+				2330DC492001EFA900A2CC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2330DC4A2001EFA900A2CC5D /* Build configuration list for PBXNativeTarget "FindNearPlace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2330DC4B2001EFA900A2CC5D /* Debug */,
+				2330DC4C2001EFA900A2CC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2330DC4D2001EFA900A2CC5D /* Build configuration list for PBXNativeTarget "FindNearPlaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2330DC4E2001EFA900A2CC5D /* Debug */,
+				2330DC4F2001EFA900A2CC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2330DC502001EFA900A2CC5D /* Build configuration list for PBXNativeTarget "FindNearPlaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2330DC512001EFA900A2CC5D /* Debug */,
+				2330DC522001EFA900A2CC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2330DC182001EFA800A2CC5D /* Project object */;
+}
