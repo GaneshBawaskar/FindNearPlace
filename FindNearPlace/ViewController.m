@@ -101,7 +101,6 @@
 }
 
 
-
 -(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     
     NSDictionary *infoDict;
@@ -225,7 +224,7 @@
         duration = [[[array objectAtIndex:0] objectForKey:@"duration"] objectForKey:@"text"];
     }
     
-    nsReturn = [NSMutableString stringWithFormat:@"%@, %@ away ...", distance, duration];
+    nsReturn = [NSMutableString stringWithFormat:@"%@, %@ away", distance, duration];
 
     return nsReturn;
 }
