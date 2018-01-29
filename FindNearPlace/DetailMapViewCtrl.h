@@ -14,10 +14,10 @@
     MKMapView *m_mapView;
     NSUInteger Index;
     NSTextField *m_name;
-    NSTextField *m_address;
+    NSTextView *m_address;
     NSTextField *m_contact;
     NSTextField *m_postcode;;
-    NSTextField *m_weekdays;
+    NSTextView *m_weekdays;
     NSLevelIndicator *indicator;
     
 }
@@ -26,9 +26,9 @@
 @property(retain) IBOutlet MKMapView *m_mapView;
 @property(retain) IBOutlet NSTextField *m_name;
 @property(retain) IBOutlet NSTextField *m_postcode;
-@property(retain) IBOutlet NSTextField *m_address;
+@property(retain) IBOutlet NSTextView *m_address;
 @property(retain) IBOutlet NSTextField *m_contact;
-@property(retain) IBOutlet NSTextField *m_weekdays;
+@property(retain) IBOutlet NSTextView *m_weekdays;
 @property(retain) IBOutlet NSLevelIndicator *indicator;
 @property(assign)  NSUInteger Index;
 -(void)updateCtrl;

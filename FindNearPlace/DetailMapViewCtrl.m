@@ -104,9 +104,9 @@
         [m_name setStringValue:name];
     
     if (address)
-        [m_address setStringValue:address];
+        [m_address setString:address];
     else
-        [m_address setStringValue:@"Not available"];
+        [m_address setString:@"Not available"];
     
     if (mobileNumber)
         [m_contact setStringValue:mobileNumber];
@@ -114,17 +114,15 @@
         [m_contact setStringValue:@"Not available "];
     
     if ([weekdays isEqualToString:@""])
-        [m_weekdays setStringValue:@"Information not available"];
+        [m_weekdays setString:@"Information not available"];
     else
-        [m_weekdays setStringValue:weekdays];
+        [m_weekdays setString:weekdays];
     
     long int intgervalue = [[[infoArray objectAtIndex:Index] objectForKey:@"rating"] integerValue];
     [indicator setDoubleValue:intgervalue];
 
     return nil;
 }
-
-
 
 -(void)updateCtrl
 {
