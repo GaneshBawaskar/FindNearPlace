@@ -53,10 +53,10 @@
     NSString *StdUrl = nil;
     NSString *Results = nil;
 
-    NSString *UrlString = [NSString stringWithFormat: @"https://maps.googleapis.com/maps/api/place/details/json?placeid=%@&key=AIzaSyCAjzh1MKW2MVtl493LQiooASqqYGjL4Yw", placeid];
-    
+    NSString *apikey;
+    apikey = [[NSUserDefaults standardUserDefaults] objectForKey:@"API_KEY"];
+    NSString *UrlString = [NSString stringWithFormat: @"https://maps.googleapis.com/maps/api/place/details/json?placeid=%@&key=%@", placeid, apikey];
     StdUrl = [UrlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    
     Results = [NSString stringWithContentsOfURL:[NSURL URLWithString:StdUrl] encoding:NSUTF8StringEncoding error:&error];
     
     if (!Results || [Results isEqualToString:@""]) {

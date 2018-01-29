@@ -21,6 +21,8 @@
     //
     [[NSUserDefaults standardUserDefaults] setObject:@"21.147,79.13" forKey:@"LocCoordinate"];
     [[NSUserDefaults standardUserDefaults] setObject:@"Gurudev Nagar, Bapu Nagar, Nandanvan, Nagpur" forKey:@"AddressLocation"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:@"AIzaSyCAjzh1MKW2MVtl493LQiooASqqYGjL4Yw" forKey:@"API_KEY"];
     // Insert code here to initialize your application
 }
 

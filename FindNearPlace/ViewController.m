@@ -196,9 +196,11 @@
         return nil;
     }
     
-    url = @"https://maps.googleapis.com/maps/api/distancematrix/json?origins=%@&destinations=%@&key=AIzaSyCAjzh1MKW2MVtl493LQiooASqqYGjL4Yw";
+    NSString *apikey;
+    apikey = [[NSUserDefaults standardUserDefaults] objectForKey:@"API_KEY"];
     
-    urlString = [NSMutableString stringWithFormat:url, CurrentAddress, DestinationAddress];
+    url =@"https://maps.googleapis.com/maps/api/distancematrix/json?origins=%@&destinations=%@&key=%@";
+    urlString = [NSMutableString stringWithFormat:url, CurrentAddress, DestinationAddress, apikey];
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     content = [NSString stringWithContentsOfURL:[NSURL URLWithString:urlString] encoding:NSUTF8StringEncoding error:&error];
     
@@ -249,9 +251,11 @@
     type = [m_mapDictionary objectForKey:m_type];
     [[m_tableView tableColumnWithIdentifier:@"ColumnID"] setTitle:m_type];
 
-    url = @"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%@&radius=5000&type=%@&key=AIzaSyDiLakEIP9fZWeuKDWE1-rGa6dZkA8Og8I";
-    urlString = [NSMutableString stringWithFormat:url, LocCoordinate, type];
-    
+    NSString *apikey;
+    apikey = [[NSUserDefaults standardUserDefaults] objectForKey:@"API_KEY"];
+    url = @"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%@&radius=5000&type=%@&key=%@";
+
+    urlString = [NSMutableString stringWithFormat:url, LocCoordinate, type, apikey];
     NSString *content = [NSString stringWithContentsOfURL:[NSURL URLWithString:urlString] encoding:NSUTF8StringEncoding error:&error];
     
     if (!content || [content isEqualToString:@""]) {
