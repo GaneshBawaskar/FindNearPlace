@@ -13,9 +13,7 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    // add a background image
-    NSColor *bckcolor = [NSColor colorWithPatternImage:[NSImage imageNamed:@"images.jpg"]];//[NSColor orangeColor];//
-    [bckcolor setFill];
+    [[NSColor whiteColor] setFill];
     NSRectFill(dirtyRect);
     [super drawRect:dirtyRect];
 }

@@ -63,8 +63,8 @@
 
 
 -(void)awakeFromNib{
-    
-     DetailMapViewCtrl *DetailMapCtrl = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"DetailMapCtrl"];
+
+    DetailMapViewCtrl *DetailMapCtrl = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"DetailMapCtrl"];
     [self addChildViewController:DetailMapCtrl];
     
     [m_tableView setDelegate:self];
@@ -96,7 +96,6 @@
 - (NSIndexSet *)tableView:(NSTableView *)tableView selectionIndexesForProposedSelection:(NSIndexSet *)proposedSelectionIndexes{
     
     m_index = [proposedSelectionIndexes firstIndex];
-    
     return proposedSelectionIndexes;
 }
 
@@ -138,7 +137,6 @@
     else
         [distTime setStringValue:@""];
     
-    
     NSLevelIndicator *Indicator =[result viewWithTag:1500];
     long int intgervalue = [[infoDict objectForKey:@"rating"] integerValue];
     [Indicator setDoubleValue:intgervalue];
@@ -153,12 +151,9 @@
         [(MapViewCtrl *)ctrl setInfoArray:m_PlacesData];
         [(MapViewCtrl *)ctrl setType:m_type];
     }
-    else if([ctrl isKindOfClass:[DetailMapViewCtrl class]]){
+    else if([ctrl isKindOfClass:[DetailMapViewCtrl class]]) {
         [(DetailMapViewCtrl *)ctrl setInfoArray:m_PlacesData];
         [(DetailMapViewCtrl *)ctrl setIndex:m_index];
-    }
-    else{
-        
     }
 }
 
@@ -171,9 +166,7 @@
 
 
 -(NSString *)getUserLocationLatLng {
-   
     NSString *locationName;
-    
     return locationName;
 }
 
@@ -198,7 +191,6 @@
     
     NSString *apikey;
     apikey = [[NSUserDefaults standardUserDefaults] objectForKey:@"API_KEY"];
-    
     url =@"https://maps.googleapis.com/maps/api/distancematrix/json?origins=%@&destinations=%@&key=%@";
     urlString = [NSMutableString stringWithFormat:url, CurrentAddress, DestinationAddress, apikey];
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -226,15 +218,13 @@
         duration = [[[array objectAtIndex:0] objectForKey:@"duration"] objectForKey:@"text"];
     }
     
-    nsReturn = [NSMutableString stringWithFormat:@"%@, %@ away", distance, duration];
-
+    nsReturn = [NSMutableString stringWithFormat:@"%@, %@ ", distance, duration];
     return nsReturn;
 }
 
 
 -(IBAction)SearchNearBy:(id)sender
 {
-    
     int count = 0;
     NSError *error;
     NSArray *nsArrayData;
@@ -272,7 +262,6 @@
         NSLog(@"Error parsing JSON: %@", error);
     }
     
-  
     if ([Dictdata isKindOfClass:[NSDictionary class]]) {
         nsArrayData = [Dictdata objectForKey:@"results"];
     }
@@ -294,7 +283,6 @@
         else
             [addChild setObject:[rating stringValue] forKey:@"rating"];
         
-        
         id placeid = [temp objectForKey:@"place_id"];
         if (!placeid)
             [addChild setObject:@"" forKey:@"place_id"];
@@ -302,7 +290,6 @@
             [addChild setObject:placeid forKey:@"place_id"];
       
         id vicinity = [temp objectForKey:@"vicinity"];
-        
         [addChild setObject:vicinity forKey:@"vicinity"];
         id name = [temp objectForKey:@"name"];
         [addChild setObject:name forKey:@"name"];

@@ -9,8 +9,8 @@
 #import "DetailMapViewCtrl.h"
 
 @interface DetailMapViewCtrl ()
-
 @end
+
 @class ViewController;
 @implementation DetailMapViewCtrl
 @synthesize infoArray;
@@ -35,6 +35,7 @@
 
 
 - (void)viewDidLoad {
+    [m_address setBackgroundColor:[NSColor whiteColor]];
     [m_weekdays sizeToFit];
     [super viewDidLoad];
     [self setTitle:@"Place Details"];
@@ -123,6 +124,7 @@
 
     return nil;
 }
+
 
 -(void)updateCtrl
 {

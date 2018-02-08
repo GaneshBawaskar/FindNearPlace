@@ -20,8 +20,9 @@
 		2330DC302001EFA900A2CC5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2330DC2E2001EFA900A2CC5D /* Main.storyboard */; };
 		2330DC3B2001EFA900A2CC5D /* FindNearPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330DC3A2001EFA900A2CC5D /* FindNearPlaceTests.m */; };
 		2330DC462001EFA900A2CC5D /* FindNearPlaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330DC452001EFA900A2CC5D /* FindNearPlaceUITests.m */; };
+		2344A5F3202063A800456040 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2344A5F2202063A800456040 /* MapView.m */; };
 		2373670F2005425000F861C4 /* CstmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2373670E2005425000F861C4 /* CstmView.m */; };
-		2373671520054A9A00F861C4 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2373671420054A9A00F861C4 /* images.jpg */; };
+		2399FB1920220F920079CB37 /* walk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2399FB1820220F910079CB37 /* walk.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +69,12 @@
 		2330DC412001EFA900A2CC5D /* FindNearPlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindNearPlaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2330DC452001EFA900A2CC5D /* FindNearPlaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindNearPlaceUITests.m; sourceTree = "<group>"; };
 		2330DC472001EFA900A2CC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2344A5F1202063A700456040 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		2344A5F2202063A800456040 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		2344A5FA20206E0000456040 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		2373670D2005425000F861C4 /* CstmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstmView.h; sourceTree = "<group>"; };
 		2373670E2005425000F861C4 /* CstmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CstmView.m; sourceTree = "<group>"; };
-		2373671420054A9A00F861C4 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpg; sourceTree = "<group>"; };
+		2399FB1820220F910079CB37 /* walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +127,14 @@
 		2330DC222001EFA800A2CC5D /* FindNearPlace */ = {
 			isa = PBXGroup;
 			children = (
+				2344A5F1202063A700456040 /* MapView.h */,
+				2344A5F2202063A800456040 /* MapView.m */,
 				2373670D2005425000F861C4 /* CstmView.h */,
 				2373670E2005425000F861C4 /* CstmView.m */,
-				2373671420054A9A00F861C4 /* images.jpg */,
+				2344A5FA20206E0000456040 /* image.png */,
 				2330DC232001EFA800A2CC5D /* AppDelegate.h */,
 				2330DC242001EFA800A2CC5D /* AppDelegate.m */,
+				2399FB1820220F910079CB37 /* walk.png */,
 				2330DC292001EFA800A2CC5D /* ViewController.h */,
 				2330DC2A2001EFA800A2CC5D /* ViewController.m */,
 				2330DC2C2001EFA800A2CC5D /* Assets.xcassets */,
@@ -279,7 +286,7 @@
 			files = (
 				2330DC2D2001EFA800A2CC5D /* Assets.xcassets in Resources */,
 				2330DC302001EFA900A2CC5D /* Main.storyboard in Resources */,
-				2373671520054A9A00F861C4 /* images.jpg in Resources */,
+				2399FB1920220F920079CB37 /* walk.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +320,7 @@
 				230FB77B2005CCA100C0DC40 /* CSTViewCell.m in Sources */,
 				2373670F2005425000F861C4 /* CstmView.m in Sources */,
 				230FB7982006A21500C0DC40 /* LocationInfoCtrl.m in Sources */,
+				2344A5F3202063A800456040 /* MapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

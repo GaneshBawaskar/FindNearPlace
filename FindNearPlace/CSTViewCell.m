@@ -15,7 +15,7 @@
     NSRect rect = [self bounds];
     NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:rect xRadius:6 yRadius:6];
     [path addClip];
-    NSColor *bckcolor = [NSColor gridColor];
+    NSColor *bckcolor = [NSColor whiteColor];
     [bckcolor setFill];
     NSRectFill(dirtyRect);
     [super drawRect:dirtyRect];

@@ -656,7 +656,7 @@
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -675,7 +675,7 @@
         <!--Find Places-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Find Places" identifier="FindPlaces" storyboardIdentifier="FindPlaces" id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Find Places" identifier="FindPlaces" storyboardIdentifier="FindPlaces" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl" customClass="CstmView">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="530"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -692,11 +692,11 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cn2-KE-xyg">
-                                <rect key="frame" x="31" y="487" width="92" height="17"/>
+                                <rect key="frame" x="31" y="487" width="91" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Nearby Place" id="bBo-8G-H87">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Search Place" id="bBo-8G-H87">
                                     <font key="font" metaFont="systemHeavy" size="13"/>
-                                    <color key="textColor" red="1" green="0.32657336865862063" blue="0.25683087576095964" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -732,20 +732,20 @@
                                 </connections>
                             </button>
                             <scrollView fixedFrame="YES" borderType="groove" autohidesScrollers="YES" horizontalLineScroll="136" horizontalPageScroll="10" verticalLineScroll="136" verticalPageScroll="10" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" findBarPosition="belowContent" translatesAutoresizingMaskIntoConstraints="NO" id="BpV-zc-qa9">
-                                <rect key="frame" x="22" y="5" width="445" height="452"/>
+                                <rect key="frame" x="15" y="18" width="453" height="447"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" ambiguous="YES" id="csw-zh-rIb">
-                                    <rect key="frame" x="2" y="2" width="441" height="448"/>
+                                    <rect key="frame" x="2" y="2" width="449" height="443"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="134" rowSizeStyle="automatic" headerView="HTA-fD-onh" viewBased="YES" id="P5N-Bu-XjZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="441" height="425"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="449" height="420"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" red="0.80000001192092896" green="0.26373880448889547" blue="0.24041768916908671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <tableColumns>
-                                                <tableColumn identifier="ColumnID" width="438" minWidth="40" maxWidth="1000" id="2qw-T4-ouh">
+                                                <tableColumn identifier="ColumnID" width="446" minWidth="40" maxWidth="1000" id="2qw-T4-ouh">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="Restaurants">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -759,8 +759,8 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <customView identifier="MyView" id="S4q-WV-ivz" customClass="CSTViewCell">
-                                                            <rect key="frame" x="1" y="1" width="438" height="134"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <rect key="frame" x="1" y="1" width="446" height="134"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" tag="300" translatesAutoresizingMaskIntoConstraints="NO" id="x5n-kg-Yaz">
                                                                     <rect key="frame" x="309" y="36" width="71" height="14"/>
@@ -827,9 +827,9 @@
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" tag="1400" translatesAutoresizingMaskIntoConstraints="NO" id="44L-Eh-0oq">
-                                                                    <rect key="frame" x="119" y="5" width="305" height="20"/>
+                                                                    <rect key="frame" x="141" y="12" width="265" height="14"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="200m, 15 hour 26 mins away .." id="WoR-FJ-hH3">
+                                                                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="3540m, 34 hour 46 mins" id="WoR-FJ-hH3">
                                                                         <font key="font" metaFont="smallSystem"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -840,6 +840,11 @@
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                     <levelIndicatorCell key="cell" controlSize="small" alignment="left" doubleValue="2" maxValue="5" levelIndicatorStyle="rating" id="zOC-1F-aqx"/>
                                                                 </levelIndicator>
+                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edy-0F-Q5W">
+                                                                    <rect key="frame" x="121" y="9" width="26" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="walk" id="GSY-jl-tDd"/>
+                                                                </imageView>
                                                             </subviews>
                                                         </customView>
                                                     </prototypeCellViews>
@@ -861,7 +866,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="HTA-fD-onh">
-                                    <rect key="frame" x="0.0" y="0.0" width="441" height="23"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="449" height="23"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
@@ -874,44 +879,44 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235" y="198"/>
+            <point key="canvasLocation" x="246" y="278"/>
         </scene>
         <!--Map View Ctrl-->
         <scene sceneID="psM-yN-fiS">
             <objects>
                 <viewController identifier="MapView" storyboardIdentifier="MapView" id="1BK-tM-DEz" customClass="MapViewCtrl" sceneMemberID="viewController">
-                    <view key="view" id="eoW-tD-90S" customClass="CstmMapView">
+                    <view key="view" id="eoW-tD-90S" customClass="CstmView">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="501"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3m-2T-GCd">
-                                <rect key="frame" x="9" y="463" width="428" height="26"/>
+                                <rect key="frame" x="14" y="457" width="405" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="E95-mJ-mgh">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Label" drawsBackground="YES" id="E95-mJ-mgh">
                                     <font key="font" size="22" name="AppleMyungjo"/>
-                                    <color key="textColor" red="1" green="0.12962689174241138" blue="0.10463880627343825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vtf-oD-raA">
-                                <rect key="frame" x="74" y="438" width="347" height="17"/>
+                                <rect key="frame" x="76" y="438" width="343" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Label" id="Mf7-6p-JX0">
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Label" drawsBackground="YES" id="Mf7-6p-JX0">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lkf-aZ-C0d">
-                                <rect key="frame" x="14" y="438" width="58" height="17"/>
+                                <rect key="frame" x="16" y="438" width="54" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Address:" id="D8c-h2-Swz">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Address:" drawsBackground="YES" id="D8c-h2-Swz">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
                             </textField>
-                            <mapView focusRingType="exterior" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGm-2N-MY5">
+                            <mapView focusRingType="exterior" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGm-2N-MY5" customClass="MapView">
                                 <rect key="frame" x="16" y="20" width="419" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
@@ -931,7 +936,7 @@
         <scene sceneID="Epv-sd-Itq">
             <objects>
                 <viewController title="Location" identifier="LocationInfo" storyboardIdentifier="LocationInfo" id="5RR-UE-VIN" customClass="LocationInfoCtrl" sceneMemberID="viewController">
-                    <view key="view" id="Uo8-Fh-a6q">
+                    <view key="view" id="Uo8-Fh-a6q" customClass="CstmView">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="166"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -1006,7 +1011,7 @@
         <scene sceneID="VCx-Lw-CLr">
             <objects>
                 <viewController identifier="DetailMapCtrl" storyboardIdentifier="DetailMapCtrl" id="ny7-Fv-yEc" customClass="DetailMapViewCtrl" sceneMemberID="viewController">
-                    <view key="view" id="aig-5N-671">
+                    <view key="view" id="aig-5N-671" customClass="CstmView">
                         <rect key="frame" x="0.0" y="0.0" width="662" height="413"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -1031,22 +1036,22 @@ DQ
                             <box fixedFrame="YES" borderType="bezel" title="Status" translatesAutoresizingMaskIntoConstraints="NO" id="wfx-yT-Nhp">
                                 <rect key="frame" x="396" y="39" width="260" height="359"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <view key="contentView" id="Tce-Sv-bHo">
+                                <view key="contentView" id="Tce-Sv-bHo" customClass="CstmView">
                                     <rect key="frame" x="3" y="3" width="254" height="341"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80Q-9p-eYI">
-                                            <rect key="frame" x="3" y="193" width="245" height="143"/>
+                                            <rect key="frame" x="12" y="193" width="231" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <clipView key="contentView" ambiguous="YES" id="w0V-Si-7sj">
-                                                <rect key="frame" x="1" y="1" width="243" height="141"/>
+                                                <rect key="frame" x="1" y="1" width="229" height="137"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView ambiguous="YES" editable="NO" selectable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" selectionGranularity="word" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="MEh-jD-rQg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="243" height="141"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="229" height="137"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" red="0.82944057642487046" green="0.82944057642487046" blue="0.82944057642487046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <size key="minSize" width="243" height="141"/>
+                                                        <size key="minSize" width="229" height="137"/>
                                                         <size key="maxSize" width="463" height="10000000"/>
                                                         <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
@@ -1058,7 +1063,7 @@ DQ
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Ks0-85-rjE">
-                                                <rect key="frame" x="228" y="1" width="16" height="141"/>
+                                                <rect key="frame" x="214" y="1" width="16" height="137"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -1112,7 +1117,7 @@ DQ
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <box fixedFrame="YES" boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="shz-DF-zVY">
+                                        <box fixedFrame="YES" boxType="custom" borderType="bezel" cornerRadius="9" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="shz-DF-zVY">
                                             <rect key="frame" x="3" y="16" width="245" height="92"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <view key="contentView" ambiguous="YES" id="fFF-wB-bJT">
@@ -1120,29 +1125,29 @@ DQ
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <scrollView wantsLayer="YES" fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="6kJ-Th-J0f">
-                                                        <rect key="frame" x="5" y="6" width="232" height="77"/>
+                                                        <rect key="frame" x="12" y="5" width="220" height="78"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <clipView key="contentView" ambiguous="YES" copiesOnScroll="NO" id="A3W-cq-uR6">
-                                                            <rect key="frame" x="0.0" y="0.0" width="232" height="77"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="78"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textView ambiguous="YES" editable="NO" selectable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" selectionGranularity="word" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="KXp-D0-HOb">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="232" height="77"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="78"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <color key="backgroundColor" red="0.89542179404145084" green="0.89542179404145084" blue="0.89542179404145084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <size key="minSize" width="232" height="77"/>
+                                                                    <size key="minSize" width="220" height="78"/>
                                                                     <size key="maxSize" width="463" height="10000000"/>
                                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 </textView>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.72429429360645536" green="0.67535344935011754" blue="0.72761496113989632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" red="0.7409488426227463" green="0.68835886177682959" blue="0.74767244170984459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </clipView>
                                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="yNs-88-dSL">
                                                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Lqe-pb-qfS">
-                                                            <rect key="frame" x="216" y="0.0" width="16" height="77"/>
+                                                            <rect key="frame" x="204" y="0.0" width="16" height="78"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                     </scrollView>
@@ -1192,5 +1197,6 @@ DQ
         <image name="NSNetwork" width="32" height="32"/>
         <image name="NSRefreshTemplate" width="11" height="15"/>
         <image name="NSStatusAvailable" width="16" height="16"/>
+        <image name="walk" width="550" height="540"/>
     </resources>
 </document>

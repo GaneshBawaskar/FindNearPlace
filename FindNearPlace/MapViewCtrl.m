@@ -19,9 +19,8 @@
 @synthesize m_Address;
 @synthesize infoArray;
 
-
 - (void)viewDidLoad {
-    
+   
     [super viewDidLoad];
 }
 
@@ -36,6 +35,7 @@
 
 
 -(void)awakeFromNib {
+ 
     NSUInteger count =  [infoArray count];
     if (count > 0){
         [self PointAnnotation];

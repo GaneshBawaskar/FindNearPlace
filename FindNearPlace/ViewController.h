@@ -13,8 +13,6 @@
 #import "LocationInfoCtrl.h"
 @interface ViewController : NSViewController <NSTableViewDelegate, NSTableViewDataSource>
 {
-    
-    
     NSButton *m_searchNearBy;
     NSTextField *m_nearByPlace;
     NSComboBox *m_comBox;
